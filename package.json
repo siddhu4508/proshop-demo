@@ -1,0 +1,31 @@
+{
+  "name": "proshop-beta",
+  "version": "1.0.0",
+  "description": "eCommerce application built with the MERN stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhu4508/proshop-demo.git"
+  },
+  "author": "Siddartha_SangamReddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siddhu4508/proshop-demo/issues"
+  },
+  "homepage": "https://github.com/siddhu4508/proshop-demo#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
